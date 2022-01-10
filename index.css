@@ -1,0 +1,112 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.sessao-principal{
+  background-color: rgb(28, 27, 27);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gerador-wrapper{
+  position: relative;
+  width: 40%;
+  height: 20rem;
+  background-color: rgb(49, 4, 92);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: .3rem;
+}
+
+.gerador-wrapper>h3{
+  position: absolute;
+  top: -2rem;
+  background-color: cadetblue;
+  padding: 1rem 1rem;
+  width: 80%;
+  border-radius: .4rem;
+  box-shadow: 4px 4px 4px #000;
+  text-shadow: 2px 2px 2px #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+.gerador-elementos>#qtdsenha{
+  width: 20%;
+  outline: none;
+}
+
+
+.resultado-wrapper{
+  position: absolute;
+  width: 80%;
+  top: 3rem;
+  height: 3rem;
+  background-color: rgb(237, 237, 237);
+  border-radius: .2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.resultado-senha{
+  color: #000;
+}
+.gerador-elementos{
+  position: relative;
+  top: 2rem;
+  margin: .4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+.btn_senha{
+  position: absolute;
+  bottom: .4rem;
+  border: none;
+  padding: .4rem .4rem;
+  border-radius: .3rem;
+  width: 50%;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(59, 89, 90);
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  transition:  all .4s;
+}
+.btn_senha:hover{
+  background-color: #fff;
+  color: rgb(59, 89, 90);
+  text-shadow: none;
+}
+
+@media(max-width:690px){
+  .gerador-wrapper>h3{
+    padding: .4rem .4rem;
+    font-size: 15px;
+  }
+}
+
+@media(max-width:510px){
+  .gerador-elementos>label{
+    font-size: 15px;
+  }
+  .gerador-wrapper>h3{
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .gerador-wrapper{
+    width: 50%;
+  }
+  .btn_senha{
+    padding: .4rem .4rem;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senha</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <section class="sessao-principal">
+
+    <div class="gerador-wrapper">
+      <h3>Gerador de Senha</h3>
+      <div class="resultado-wrapper">
+        <div class="resultado-senha"></div>
+      </div>
+
+      <div id="qtd-senha" class="gerador-elementos">
+        <label for="qtdsenha">Quantidade:</label>
+        <input type="number" minlength="1" maxlength="2" name="number" id="qtdsenha">
+      </div>
+      <div class="gerador-elementos">
+        <label for="number">Números:</label>
+        <input type="checkbox" name="number" id="numero">
+      </div>
+
+      <div class="gerador-elementos">
+        <label for="number">Símbolos:</label>
+        <input type="checkbox" name="number" id="simbolo">
+      </div>
+
+      <div class="gerador-elementos">
+        <label for="number">Letras ( Caixa Alta):</label>
+        <input type="checkbox" name="number" id="letrasAlta">
+      </div>
+
+      <div class="gerador-elementos">
+        <label for="number">Letras (Caixa Baixa):</label>
+        <input type="checkbox" name="number" id="letrasBaixa">
+      </div>
+
+      <button class="btn_senha">Gerar senha</button>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
