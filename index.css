@@ -9,6 +9,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -85,6 +86,24 @@
   background-color: #fff;
   color: rgb(59, 89, 90);
   text-shadow: none;
+}
+
+.btn_voltar_port{
+  display: block;
+  border: solid 1px #fff;
+  background-color: rgb(37, 39, 53);
+  width: 10%;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: .4rem .4rem;
+  border-radius: .4rem;
+  color: #fff;
+  transition: all .4s;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+.btn_voltar_port:hover{
+  transform: scale(1.1);
 }
 
 @media(max-width:690px){
