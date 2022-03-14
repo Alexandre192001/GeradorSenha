@@ -24,5 +24,5 @@
 <li>Letras (Alta) - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha Letras em caixa alta;</li>
 <li>Letras (Baixa) - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha Letras em caixa baixa.</li>
 </ul>
-
+<hr>
 Link : https://gerador-senha-alexandre.netlify.app/
