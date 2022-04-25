@@ -26,6 +26,8 @@ function simbolo() {
   return simbolos[Math.floor(Math.random() * simbolos.length)]
 }
 
+
+
 function gerarsenha() {
   const len = tamanho.value
   let senha = "";
