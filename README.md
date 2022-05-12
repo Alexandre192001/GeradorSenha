@@ -22,8 +22,9 @@
 <li>Números - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha números;</li>
 <li>Símbolos - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha símbolos;</li>
 <li>Letras (Alta) - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha Letras em caixa alta;</li>
-<li>Letras (Baixa) - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha Letras em caixa baixa.</li>
-<li>Botão Voltar - Volta para a página portfólio</li>
+<li>Letras (Baixa) - Marcando essa opção o programa vai entender que o usuário quer uma senha que contenha Letras em caixa baixa;</li>
+ <li>Gerar Senha - Após clicar no botão gerar senha, será gerada uma senha aleatória e se ficar clicando, ele vai gerando cada vez mais senhas;</li>
+<li>Botão Voltar - Volta para a página portfólio.</li>
 </ul>
 <hr>
 Link : https://gerador-senha-alexandre.netlify.app/
