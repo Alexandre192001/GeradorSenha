@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "sass": "^1.51.0"
+  },
+  "name": "gerador_senha",
+  "description": "<h1>Gerador de Senha</h1>\r <hr>\r <h2>Linguagens Utilizadas:</h2>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandre192001/GeradorSenha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre192001/GeradorSenha/issues"
+  },
+  "homepage": "https://github.com/Alexandre192001/GeradorSenha#readme"
+}
