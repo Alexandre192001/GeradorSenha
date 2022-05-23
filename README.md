@@ -13,7 +13,7 @@
 
 
 <hr>
-<h2>⚜️Descriçao⚜️</h2>
+<h2>⚜️Descrição⚜️</h2>
 <p>Desenvolvida com o intuito de ajudar pessoas à criarem senhas mais fortes, nela temos algumas caixas para serem marcadas para o programa conseguir saber qual o desejo de senha do usuário. </p>
 <hr>
 <h2>⚜️Funcionalidades:⚜️</h2>
