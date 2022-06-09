@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-$font-principal:"Fredericka the Great";
-$font-secundaria:"Lobster";
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+$font-principal:"Cantarell";
+$font-secundaria:"Montserrat";
 
 /*Zerando valores padroes de navegadores*/ 
 *{
@@ -39,8 +38,7 @@ $font-secundaria:"Lobster";
     color: #fff;
     display: flex;
     align-items:center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing:3px;
+    font-family: $font-principal;
     justify-content: center;
 
     &::-webkit-scrollbar{
@@ -58,22 +56,20 @@ $font-secundaria:"Lobster";
     background-color: #0c2c64;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 30%;
-    height:60%;
+    height:25rem;
     border-radius: 5px;
 
     h3{
       @include estili-names($font-principal,#fff,25px);
-      position: relative;
-      top: -4rem;
+      position: absolute;
+      top: -5rem;
       left: -5rem;
-      font-size: 20px;
-      text-shadow: 1px 1px 1px #000;
-      letter-spacing:5px;
-      background-color:#1350BD; 
+      font-size: 30px;
+      text-shadow: 1px 5px 4px rgb(121, 83, 83);
       padding:1rem 1rem;
       border-radius: .4rem;
     }
@@ -83,30 +79,31 @@ $font-secundaria:"Lobster";
 
 
       input[type="number"]{
-        width: 30%;
+        width: 15%;
         outline: none;
         @include estili-names($font-secundaria,#000,15px)
       }
 
       label{
-        @include estili-names($font-secundaria,#fff,20px)
+        @include estili-names($font-secundaria,#fff,15px)
       }
     }
 
     .btn_senha{
-      width: 30%;
+      width: 80%;
       border: none;
       padding:.5rem .5rem;
       border-radius: .2rem;
       font-size: 15px;
       font-family: $font-secundaria;
       color: #fff;
-      background-color:#334652;
+      background-color:#1a4f70;
       border:solid 1px #fff;
       cursor: pointer;
-      transition:all .4s;
+      transition:all .4s ease;
       position: absolute;
-      bottom: 5rem;
+      bottom: .5rem;
+
       &:hover{
         transform: scale(1.1);
       }
@@ -121,7 +118,6 @@ $font-secundaria:"Lobster";
     padding:.4rem 2rem;
     background-color:#1350BD;
     border-radius: .4rem;
-    border: solid 1px #fff;
     transition:all .4s;
 
     &:hover{

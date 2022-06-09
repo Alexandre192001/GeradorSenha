@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 /*Zerando valores padroes de navegadores*/
 * {
   margin: 0%;
@@ -31,8 +31,7 @@
   color: #fff;
   display: flex;
   align-items: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  letter-spacing: 3px;
+  font-family: "Cantarell";
   justify-content: center;
 }
 .sessao-principal .resultado-wrapper::-webkit-scrollbar {
@@ -47,24 +46,22 @@
   background-color: #0c2c64;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 30%;
-  height: 60%;
+  height: 25rem;
   border-radius: 5px;
 }
 .sessao-principal .gerador-wrapper h3 {
-  font-family: "Fredericka the Great";
+  font-family: "Cantarell";
   color: #fff;
   font-size: 25px;
-  position: relative;
-  top: -4rem;
+  position: absolute;
+  top: -5rem;
   left: -5rem;
-  font-size: 20px;
-  text-shadow: 1px 1px 1px #000;
-  letter-spacing: 5px;
-  background-color: #1350BD;
+  font-size: 30px;
+  text-shadow: 1px 5px 4px #795353;
   padding: 1rem 1rem;
   border-radius: 0.4rem;
 }
@@ -72,37 +69,37 @@
   margin: 0.4rem;
 }
 .sessao-principal .gerador-wrapper .gerador-elementos input[type=number] {
-  width: 30%;
+  width: 15%;
   outline: none;
-  font-family: "Lobster";
+  font-family: "Montserrat";
   color: #000;
   font-size: 15px;
 }
 .sessao-principal .gerador-wrapper .gerador-elementos label {
-  font-family: "Lobster";
+  font-family: "Montserrat";
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
 }
 .sessao-principal .gerador-wrapper .btn_senha {
-  width: 30%;
+  width: 80%;
   border: none;
   padding: 0.5rem 0.5rem;
   border-radius: 0.2rem;
   font-size: 15px;
-  font-family: "Lobster";
+  font-family: "Montserrat";
   color: #fff;
-  background-color: #334652;
+  background-color: #1a4f70;
   border: solid 1px #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.4s ease;
   position: absolute;
-  bottom: 5rem;
+  bottom: 0.5rem;
 }
 .sessao-principal .gerador-wrapper .btn_senha:hover {
   transform: scale(1.1);
 }
 .sessao-principal .btn_voltar_port {
-  font-family: "Fredericka the Great";
+  font-family: "Cantarell";
   color: #fff;
   font-size: 20px;
   position: absolute;
@@ -112,7 +109,6 @@
   padding: 0.4rem 2rem;
   background-color: #1350BD;
   border-radius: 0.4rem;
-  border: solid 1px #fff;
   transition: all 0.4s;
 }
 .sessao-principal .btn_voltar_port:hover {
