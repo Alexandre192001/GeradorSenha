@@ -1,3 +1,4 @@
+/*Importante fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 $font-principal:"Cantarell";
@@ -9,12 +10,13 @@ $font-secundaria:"Montserrat";
   padding:0%;
   box-sizing: border-box;
 }
-
+/*Usando mixin para deixar definida algumas propriedades*/
 @mixin estili-names($font-family,$color,$font-size) {
   font-family:$font-family;
   color:$color;
   font-size: $font-size;
 }
+
 /*Estilização da sessão principal*/ 
 .sessao-principal{
   height:100vh;
@@ -26,6 +28,7 @@ $font-secundaria:"Montserrat";
   width: 100%;
   background-image: linear-gradient(to left, #29292a,#222934);
 
+  // Campo de resultado
   .resultado-wrapper{
     background-color: rgb(115, 134, 170);
     width: 80%;
@@ -41,6 +44,7 @@ $font-secundaria:"Montserrat";
     font-family: $font-principal;
     justify-content: center;
 
+    // Estilizando scrollbar da pagina
     &::-webkit-scrollbar{
       background-color:rgb(255, 255, 255);
       width: .1rem;
@@ -51,7 +55,7 @@ $font-secundaria:"Montserrat";
       width: .4rem;
     }
   }
-
+  // Wrapper dos inputs
   .gerador-wrapper{
     background-color: #0c2c64;
     display:flex;
@@ -63,6 +67,7 @@ $font-secundaria:"Montserrat";
     height:25rem;
     border-radius: 5px;
 
+    // Estilizando nome da sessão
     h3{
       @include estili-names($font-principal,#fff,25px);
       position: absolute;
@@ -73,22 +78,23 @@ $font-secundaria:"Montserrat";
       padding:1rem 1rem;
       border-radius: .4rem;
     }
-
+    // Estilizando espaçamento entre inputs
     .gerador-elementos{
       margin:.4rem;
 
-
+      //Pegando input com type number 
       input[type="number"]{
         width: 15%;
         outline: none;
         @include estili-names($font-secundaria,#000,15px)
       }
-
+      // Estilizando label do projeto
       label{
         @include estili-names($font-secundaria,#fff,15px)
       }
     }
 
+    // Gerador de senha
     .btn_senha{
       width: 80%;
       border: none;
@@ -103,12 +109,14 @@ $font-secundaria:"Montserrat";
       transition:all .4s ease;
       position: absolute;
       bottom: .5rem;
-
+      // Adicionando animação de hover no botão
       &:hover{
         transform: scale(1.1);
       }
     }
   }
+
+  // Botão de voltar para o portfolio
   .btn_voltar_port{
     @include estili-names($font-principal,#fff,20px);
     position: absolute;
@@ -119,14 +127,14 @@ $font-secundaria:"Montserrat";
     background-color:#1350BD;
     border-radius: .4rem;
     transition:all .4s;
-
+    // Adicionando animação de hover no btn
     &:hover{
       transform:scale(1.1);
 
     }
   }
 
-
+  // Responsividades
   @media(max-width:645px){
     .gerador-wrapper{
       width: 90%;

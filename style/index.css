@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Importante fontes*/
 @import url("https://fonts.googleapis.com/css2?family=Cantarell&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 /*Zerando valores padroes de navegadores*/
@@ -8,6 +9,7 @@
   box-sizing: border-box;
 }
 
+/*Usando mixin para deixar definida algumas propriedades*/
 /*Estilização da sessão principal*/
 .sessao-principal {
   height: 100vh;

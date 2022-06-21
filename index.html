@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +8,20 @@
   <link rel="stylesheet" href="./style/index.css">
   <script defer src="index.js"></script>
 </head>
-
 <body>
 
-  <section class="sessao-principal">
+  <!-- Sessão main -->
+  <main class="sessao-principal">
+    <!-- Titulo da sessão -->
     <div class="gerador-wrapper">
       <h3>Gerador de Senha</h3>
+
+      <!-- Senhas - Resultado -->
       <div class="resultado-wrapper">
         <div class="resultado-senha"></div>
       </div>
 
+      <!-- Inputs de validação -->
       <div id="qtd-senha" class="gerador-elementos">
         <label for="qtdsenha">Quantidade:</label>
         <input type="number" minlength="1" maxlength="2" name="number" id="qtdsenha">
@@ -46,11 +49,10 @@
       <button class="btn_senha">Gerar senha</button>
 
     </div>
+
+    <!-- Botão de voltar -->
     <a class="btn_voltar_port" href="https://frontend-alexandrejr.netlify.app/">Voltar</a>
-
-
-  </section>
-
+  </main>
 </body>
 
 </html>
