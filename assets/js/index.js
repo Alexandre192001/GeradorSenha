@@ -29,26 +29,33 @@ function simbolo() {
 
 
 function gerarsenha() {
-  const len = tamanho.value
-  let senha = "";
-  if (checkletraAlta.checked) {
-    senha += letraAlta()
-  }
-  if (checkletraBaixa.checked) {
-    senha += letraBaixa()
-  }
-  if (checknumber.checked) {
-    senha += numero()
-  }
-  if (checksimbolo.checked) {
-    senha += simbolo()
-  }
-  for (let i = senha.length; i < len; i++) {
-    const x = gerarX();
-    senha += x
 
+  if(tamanho.value==="" || tamanho.value==0) {
+    alert("Preencha o campo de quantidade com um valor valido")
+  } else if(tamanho.value!="") {
+
+    const len = tamanho.value
+    let senha = "";
+    if (checkletraAlta.checked) {
+      senha += letraAlta()
+    }
+    if (checkletraBaixa.checked) {
+      senha += letraBaixa()
+    }
+    if (checknumber.checked) {
+      senha += numero()
+    }
+    if (checksimbolo.checked) {
+      senha += simbolo()
+    }
+    for (let i = senha.length; i < len; i++) {
+      const x = gerarX();
+      senha += x
+  
+    }
+    resultado.innerHTML = senha;
   }
-  resultado.innerHTML = senha;
+  
 }
 
 function gerarX() {
@@ -72,6 +79,5 @@ function gerarX() {
   return bancoSenha[Math.floor(Math.random()* bancoSenha.length)]
 
 }
-
 
 btn.addEventListener("click", gerarsenha)
