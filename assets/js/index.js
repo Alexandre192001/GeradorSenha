@@ -30,7 +30,7 @@ function simbolo() {
 
 function gerarsenha() {
 
-  if(tamanho.value==="" || tamanho.value==0) {
+  if(tamanho.value==="" || tamanho.value==0 || tamanho.value<4) {
     alert("Preencha o campo de quantidade com um valor valido")
   } else if(tamanho.value!="") {
 
@@ -79,5 +79,18 @@ function gerarX() {
   return bancoSenha[Math.floor(Math.random()* bancoSenha.length)]
 
 }
+
+
+document.querySelector(".btn_copiar").addEventListener("click", function (ev) {
+  const resultadoSenha = document.querySelector(".resultado-senha")
+  const button = ev.currentTarget
+  if (button.innerText === "Copiar") {
+    button.innerText = "Copiado!"
+    navigator.clipboard.writeText(resultadoSenha.innerText)
+  } else {
+    button.innerText = "Copiar"
+    button.classList.remove("success")
+  }
+})
 
 btn.addEventListener("click", gerarsenha)

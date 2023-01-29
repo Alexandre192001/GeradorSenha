@@ -6,68 +6,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerador de Senha</title>
-  <!-- === BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-  <!-- === BOOTSTRAP-ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <!-- === CSS === -->
   <link rel="stylesheet" href="./assets/style/index.css">
-  <!-- === JS === -->
   <script defer src="./assets/js/index.js"></script>
 </head>
 
 <body>
 
-  <!-- === SESSÃO MAIN -->
-  <main class="sessao-principal">
-    <!-- === IMAGEM DE FUNDO === -->
-    <img src="./assets/img/img-background.jpg" alt="imagem-background-main">
-    <!-- Titulo da sessão -->
-    <div class="gerador-wrapper">
-      <h3>Gerador de Senha</h3>
 
-      <!-- Senhas - Resultado -->
-      <div class="resultado-wrapper">
-        <div class="resultado-senha"></div>
-      </div>
-
-      <!-- Inputs de validação -->
+  <div class="container-geradorSenha-wrapper">
+    
+    <div class="container-geradorSenha">
+      <h1>Gerador de Senha</h1>
+      
       <div class="container-inputs">
 
-        <div id="qtd-senha" class="gerador-elementos">
+        <div class="gerador-elementos">
           <label for="qtdsenha">Quantidade :</label>
-          <input type="number" minlength="1" maxlength="2" name="number" id="qtdsenha">
+          <input type="number" minlength="1" maxlength="2" value="4" name="number" id="qtdsenha">
         </div>
 
         <div class="gerador-elementos">
-          <label for="number">Números :</label>
+          <label for="numero">Números :</label>
           <input type="checkbox" name="number" id="numero">
         </div>
 
         <div class="gerador-elementos">
-          <label for="number">Símbolos :</label>
+          <label for="simbolo">Símbolos :</label>
           <input type="checkbox" name="number" id="simbolo">
         </div>
 
         <div class="gerador-elementos">
-          <label for="number">Letras ( Caixa Alta) :</label>
+          <label for="letrasAlta">Letras ( Caixa Alta) :</label>
           <input type="checkbox" name="number" id="letrasAlta">
         </div>
 
         <div class="gerador-elementos">
-          <label for="number">Letras (Caixa Baixa) :</label>
+          <label for="letrasBaixa">Letras (Caixa Baixa) :</label>
           <input type="checkbox" name="number" id="letrasBaixa">
         </div>
 
-        <button class="btn_senha btn btn-outline-success">Gerar senha</button>
+        <button class="btn_senha btn ">Gerar senha</button>
       </div>
 
-     
     </div>
-     <!-- Botão de voltar -->
-    <a type="button" class="btn btn-outline-warning" href="https://portfolio-pessoal-alexandre.netlify.app/">Voltar</a>
 
-  </main>
+    <div class="resultado-wrapper">
+      <div class="resultado-senha"></div>
+      <button class="btn_copiar">Copiar</button>
+    </div>
+
+    <a type="button" class="btn_voltar" href="https://portfolio-pessoal-alexandre.netlify.app/">Voltar</a>
+
 </body>
 
 </html>
