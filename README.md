@@ -1,4 +1,4 @@
-<h1>Gerador de Senha</h1>
+<h1>Gerador de Senha seguras</h1>
 <hr>
 <h2>Linguagens Utilizadas:</h2>
 
